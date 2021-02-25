@@ -1,30 +1,24 @@
-body {
-    display: grid;
-    grid-template-rows: 5vh 65vh 10vh;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-areas:"hd hd hd"
-                        ". ma ."
-                        "ft ft ft";
+a {
+    text-decoration: none;;
+    color: black;
 }
 
-nav {
-    grid-area: hd;
-}
-
-main {
-    grid-area: ma;
-}
-
-footer {
-    grid-area: ft;
+a:hover {
+    text-decoration: underline;
 }
 
 .button {
     background-color: rgba(181, 181, 181, 0.1);
-    color: rgba(41, 41, 41, 1);
+    color: dimgrey;
     padding: 8px;
-    border-color: transparent;
-    border-radius: 2px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.button:hover {
+    color: rgba(41, 41, 41, 1);
+    border: 1px solid darkgrey;
+    box-shadow: 0px 0.5px 1px darkgrey;
 }
 
 .navbar {
@@ -60,6 +54,10 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: whitesmoke;
+}
+
+.bottom-navbar a {
+    color: dimgrey;
 }
 
 .bottom-navbar ul {
