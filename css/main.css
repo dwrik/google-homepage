@@ -1,0 +1,27 @@
+.button {
+    background-color: rgba(181, 181, 181, 0.1);
+    color: rgba(41, 41, 41, 1);
+    padding: 8px;
+    border-color: transparent;
+    border-radius: 2px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
