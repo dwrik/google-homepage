@@ -1,3 +1,24 @@
+body {
+    display: grid;
+    grid-template-rows: 5vh 65vh 10vh;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas:"hd hd hd"
+                        ". ma ."
+                        "ft ft ft";
+}
+
+nav {
+    grid-area: hd;
+}
+
+main {
+    grid-area: ma;
+}
+
+footer {
+    grid-area: ft;
+}
+
 .button {
     background-color: rgba(181, 181, 181, 0.1);
     color: rgba(41, 41, 41, 1);
@@ -6,13 +27,19 @@
     border-radius: 2px;
 }
 
-.navbar ul {
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+}
+
+.navbar ul {
+    padding: 20px;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul li {
@@ -24,4 +51,23 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
+}
+
+.bottom-navbar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.bottom-navbar ul {
+    padding: 20px;
+    list-style: none; 
+}
+
+.bottom-navbar ul li {
+    display: inline;
+    margin-left: 22px;
 }

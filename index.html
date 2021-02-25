@@ -3,21 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Google</title>
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
         <link type="text/css" rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="https://github.com/dwrik" target="_blank"><img src="images/wrik.jpg" alt="Me!" class="avatar"></a></li>
-                </ul>
-            </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="https://github.com/dwrik" target="_blank"><img src="images/wrik.jpg" alt="Me!" class="avatar"></a></li>
+            </ul>
         </nav>
         <main>
             <img src="images/logo.png" alt="the google logo">
-            <form>
+            <form action="/">
                 <div class="search">
                     <img src="#" alt="">
                     <input type="search" name="searchbar">
@@ -27,7 +26,22 @@
                 <input type="button" class="button" value="I'm Feeling Lucky">
             </form>
         </main>
-        <footer>
+        <footer class="bottom-navbar">
+            <div class="left">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
