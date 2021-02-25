@@ -1,6 +1,11 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 a {
     text-decoration: none;;
     color: black;
+    font-size: 0.85em;
 }
 
 a:hover {
@@ -47,13 +52,31 @@ a:hover {
     border-radius: 50%;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: 100vh;
+    grid-template-areas: ". mn .";
+}
+
+.content {
+    grid-area: mn;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.content img {
+    height: auto;
+}
+
 .bottom-navbar {
     width: 100%;
     position: fixed;
     bottom: 0;
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: rgb(240, 240, 240);
+    border-top: 0.1px solid rgb(218, 218, 218);
 }
 
 .bottom-navbar a {
@@ -61,7 +84,7 @@ a:hover {
 }
 
 .bottom-navbar ul {
-    padding: 20px;
+    padding: 18px 14px;
     list-style: none; 
 }
 
